@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Social Media Platform</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+
+    <h1>Post Something!</h1>
+    <form action="/post" method="POST">
+        <textarea name="content" placeholder="What's on your mind?"></textarea>
+        <button type="submit">Post</button>
+    </form>
+
+    <h2>Recent Posts</h2>
+    <% posts.forEach(function(post) { %>
+        <div class="post">
+            <%= post.content %>
+        </div>
+        <% }); %>
+
+
+</body>
+
+</html>

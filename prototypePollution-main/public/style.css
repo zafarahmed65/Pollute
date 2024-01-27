@@ -1,0 +1,90 @@
+/* General Body Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e7ecf2;
+}
+
+.container {
+  background: #ffffff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Header Styles */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Input Field and Button Styles */
+input[type="text"],
+button {
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"] {
+  width: calc(100% - 44px); /* Adjust width considering padding */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+  margin: 20px 0;
+}
+
+/* Confirmation Message */
+#confirmationMessage {
+  color: #16a085;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.demo-button {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+  display: inline-block; /* Align buttons side by side */
+}
+
+.demo-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
